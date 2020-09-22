@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="AtmDesigner.Resources.AtmButtonControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:AtmButtonControl="clr-namespace:AtmDesigner.Resources"
+             mc:Ignorable="d" 
+             d:DesignHeight="90" d:DesignWidth="420">
+    <Grid>
+        <Border x:Name="ButtonImage" Width="420" Height="90">
+            <Grid x:Name="ButtonGrid" Width="380" HorizontalAlignment="Left">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="Text0" Grid.Row="0" Grid.Column="0">
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="FontSize" Value="25"/>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+                <TextBlock x:Name="Text1" Grid.Row="0" Grid.Column="1">
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="FontSize" Value="25"/>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+                <TextBlock x:Name="Text2" Grid.Row="1" Grid.Column="0">
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="FontSize" Value="25"/>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+                <TextBlock x:Name="Text3" Grid.Row="1" Grid.Column="1">
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="FontSize" Value="25"/>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+            </Grid>
+            <Border.Background>
+                <ImageBrush ImageSource="/Resources/ComponentImages/AtmButton/LeftButton.png"/>
+            </Border.Background>
+        </Border>
+        <TextBlock x:Name="MainText" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock.Style>
+                <Style TargetType="TextBlock">
+                    <Setter Property="Text" Value="asdasdsad"/>
+                    <Setter Property="FontSize" Value="32"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Style>
+            </TextBlock.Style>
+        </TextBlock>
+    </Grid>
+</UserControl>
